@@ -1,0 +1,9 @@
+<div class="post">
+	<section class="thought">
+		<h1 class="title">{{ thoughtRef.title }}</h1>
+		<p class="thoughtText">{{ thoughtRef.thought }}</p>
+	</section>
+	<p class="votes">{{ thoughtRef.votes }}</p>
+	<button class="postbtn" (click)="upVotePost()">Up</button>
+	<button class="postbtn" (click)="deletePost()">X</button>
+</div>

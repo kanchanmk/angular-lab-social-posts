@@ -1,0 +1,18 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.postContainer {
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 1px solid black;
+	width: 80%;
+	background-color: white;
+}
+
+.heading {
+	text-align: center;
+}

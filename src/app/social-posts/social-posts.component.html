@@ -1,0 +1,17 @@
+<main class="main">
+	<h1 class="heading">My Thoughts</h1>
+
+	<app-new-post (addClicked)="onShowForm()"></app-new-post>
+
+	<app-post-form
+		*ngIf="showFormFlag"
+		(submitted)="onSubmit($event)"
+	></app-post-form>
+	<app-post
+		class="postContainer"
+		*ngFor="let thisThought of myThoughts; index as i"
+		[thoughtRef]="thisThought"
+		(deleted)="onDelete(i)"
+		(upVoted)="onUpVote(i)"
+	></app-post>
+</main>
